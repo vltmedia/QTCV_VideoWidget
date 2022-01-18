@@ -18,37 +18,16 @@
 color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QStackedWidget" name="stackedWidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>0</y>
-      <width>1021</width>
-      <height>641</height>
+      <x>20</x>
+      <y>20</y>
+      <width>1621</width>
+      <height>801</height>
      </rect>
     </property>
-    <widget class="QWidget" name="page"/>
-    <widget class="QWidget" name="page_2"/>
-   </widget>
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="geometry">
-     <rect>
-      <x>1130</x>
-      <y>90</y>
-      <width>381</width>
-      <height>531</height>
-     </rect>
-    </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>Tab 1</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Tab 2</string>
-     </attribute>
-    </widget>
+    <layout class="QHBoxLayout" name="horizontalLayout"/>
    </widget>
    <widget class="QWidget" name="">
     <property name="geometry">

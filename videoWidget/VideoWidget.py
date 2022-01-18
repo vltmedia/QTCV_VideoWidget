@@ -25,6 +25,7 @@ class VideoWidget(QWidget):
 
     def __init__(self, parent=None, context=None, ):
         super(VideoWidget, self).__init__()
+        self.setMaximumSize(QSize(680, 550))
         self.CurrentFrame = 0
         self.lastDirectoryScreenshot = "/"
         self.CurrentMedia = None

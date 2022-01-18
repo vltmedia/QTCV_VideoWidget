@@ -11,7 +11,7 @@ from shutil import copyfile
 from PySide2.QtCore import Signal, QThread
 from videoWidget.VideoWidget import VideoWidget
 from MainWindow.form import Ui_main
-from videoWidget.widgets.vidWidget_Window import Video_Window
+from videoWidget.VideoWidget import VideoWidget
 
 
 class Ui_Main(QMainWindow):
@@ -23,9 +23,11 @@ class Ui_Main(QMainWindow):
         self.loaded = False
         self.ui = Ui_main()
         self.ui.setupUi(self)
-        self.Video_Window = Video_Window(self)
-        self.ui.stackedWidget.addWidget(self.Video_Window)
-        self.Video_Window.show()
+        self.VideoWidget = VideoWidget(self)
+        self.VideoWidget2 = VideoWidget(self)
+        self.ui.horizontalLayout.addWidget(self.VideoWidget)
+        self.ui.horizontalLayout.addWidget(self.VideoWidget2)
+        # self.Video_Window.show()
         # self.ui.stackedWidget.show()
         # self.SetupVideoWidget()
         # self.ui.textSizeA.editingFinished.connect(self.textSizeAChanged)
