@@ -193,6 +193,10 @@ class VideoWidget(QWidget):
             self.StackedWidget.setCurrentIndex(1)
             self.UpdateTableView()
 
+    def loadQPixmapImage(self, qPixmap):
+            self.graphicView_Entry.setPixmap(qPixmap)
+            self.StackedWidget.setCurrentIndex(1)
+
     def UpdateTableView(self):
         self.InputVideoInfo = GetVideoInfo(self.CurrentMedia)
         self.DurationNumberLabel.setText(str(self.InputVideoInfo['FrameCount']))

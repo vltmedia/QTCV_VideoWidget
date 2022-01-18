@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.0, 2022-01-18T06:11:38. -->
+<!-- Written by QtCreator 4.13.0, 2022-01-18T06:48:20. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -262,7 +262,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">M:/Projects/Apps/UAP_AI/01-Working/01-_User/99-Code/Widgets/MediaWidgets</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default"></value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">2</value>
   </valuemap>
