@@ -32,6 +32,9 @@ class VideoWidget(QWidget):
         self.SetupUI()
         self.SetupPlayerConnections()
 
+    PositionChanged = Signal(float)
+    SliderPositionChanged = Signal(float)
+    StateChanged = Signal(object)
 
     def SetupUI(self):
         self.VController = VideoController(self)
@@ -233,6 +236,7 @@ class VideoWidget(QWidget):
             #
             # self.playButton.setIcon(
             #     self.style().standardIcon(QStyle.SP_MediaPlay))
+        self.StateChanged.emit(state)
 
     def positionChanged(self, position):
         self.positionSlider.setValue(position)
@@ -249,7 +253,7 @@ class VideoWidget(QWidget):
         except:
             pass
         self.TimecodeNumberLabel.setText(timecodeCurrent)
-
+        self.PositionChanged.emit(position)
 
     def durationChanged(self, duration):
         self.positionSlider.setRange(0, duration)
@@ -300,6 +304,7 @@ class VideoWidget(QWidget):
             self.StackedWidget.setCurrentIndex(1)
             self.FrameNumberLabel.setText(str(int(frame)))
             self.TimecodeNumberLabel.setText(self.frames_to_TC(frames=frame, frameRate=int(self.InputVideoInfo['Framerate'])))
+            self.SliderPositionChanged.emit(position)
 
     def handleError(self):
         # self.playButton.setEnabled(False)
