@@ -12,10 +12,10 @@ from Qt import QtCore, QtGui, QtWidgets
 from shutil import copyfile
 from PySide2.QtCore import Signal, QThread
 from PySide2.QtMultimediaWidgets import QVideoWidget
-from helpers.OpenCV.CV2VideoHandler import GetFrameFromVideoQPixmap, GetVideosInfo, GetFrameFromVideoNormalizedQPixmap, \
+from ..helpers.OpenCV.CV2VideoHandler import GetFrameFromVideoQPixmap, GetVideosInfo, GetFrameFromVideoNormalizedQPixmap, \
     GetVideoInfo, GetFrameFromVideoAndSave
-from videoController.VideoController import VideoController
-from videoFunctionsController.VideoFunctionsController import VideoFunctionsController
+from ..videoController.VideoController import VideoController
+from ..videoFunctionsController.VideoFunctionsController import VideoFunctionsController
 # from videoWidget.VideoWidget import VideoWidget
 # from MainWindow.form import Ui_main
 import resources_rc

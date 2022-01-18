@@ -12,7 +12,6 @@ from Qt import QtCore, QtGui, QtWidgets
 from shutil import copyfile
 from PySide2.QtCore import Signal,QThread
 
-from videoController.videoController_ui import Ui_Form
 
 
 
