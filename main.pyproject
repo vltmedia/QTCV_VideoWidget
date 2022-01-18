@@ -1,0 +1,11 @@
+{
+    "files": [
+    "MainWindow/form.ui",
+    "MainWindow/form.py",
+    "main.py",
+    "VideoWidget/VideoWidget.ui",
+    "VideoWidget/VideoWidget_widget.py",
+    "resources.qrc"
+
+    ]
+}
